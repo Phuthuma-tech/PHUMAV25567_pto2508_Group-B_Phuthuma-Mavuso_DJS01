@@ -1,69 +1,53 @@
-# DJS01: Vanilla JS Podcast App
 
-## Overview
+# 🎙️ PodcastApp
 
-You will design and build a responsive web application that allows users to **browse podcast shows** on a landing page and **view detailed information** in a modal. The application should display clear, concise previews of podcast shows and offer additional information through a modal pop-up, **all without navigating away from the page**. Your app should showcase clean code architecture and strong UI/UX design while following JavaScript best practices.
-
----
-
-## Core Objectives
-
-### 1. Landing Page – Podcast Previews
-
-- Display a list of podcast shows on the landing page.
-- Each podcast preview must include:
-  - Cover image
-  - Show title
-  - Number of seasons
-  - Genre names
-  - Last updated date (in a human-readable format)
-
-### 2. Modal View – Show Details
-
-- When a user clicks on a podcast preview, open a modal.
-- The modal should include:
-  - Larger cover image
-  - Podcast title
-  - Description of the show
-  - Genre tags
-  - Last updated date (readable format)
-  - List of season titles
-  - Number of episodes in each season
-- Include a clear and accessible way to **close the modal**.
-
-### 3. Code Architecture & Best Practices
-
-- Use **object-oriented programming (OOP)** where appropriate.
-- Apply **functional programming principles** to ensure modularity and predictability.
-- Follow **SOLID design principles** for clean, maintainable code.
-- Abstract repeated logic into **reusable functions or classes**.
-- Add **JSDoc comments** for major functions and modules.
+A sleek, modular, single-page application (SPA) built with Vanilla JavaScript. PodcastApp allows users to browse a library of shows, filter by genre, search for specific titles, and view detailed episode information through a responsive and accessible interface.
 
 ---
 
-## Technical Requirements
+## 🚀 Features
 
-- Use **HTML, CSS (or Tailwind), and JavaScript**.
-- No page reloads: Use JavaScript to handle modal behaviour and data rendering.
-- Ensure all UI states (modal open/close, hover effects, etc.) work smoothly.
-- Ensure all data is displayed in a **readable and accessible format**.
-
----
-
-## Design & UX Goals
-
-- Visually appealing UI with clear layout and hierarchy.
-- Use a consistent **colour scheme, typography, spacing, and sizing**.
-- Accessibility considerations (contrast, font readability, responsive buttons).
-- App should be fully **responsive** on desktop, tablet, and mobile.
-
-Make sure to dive into the wireframe reference images folder for guidance on how to build the UI structure. Note that the UI wireframes for both Desktop and Mobile are included.  
-
-![alt text](<wireframe reference images/desktop view/desktop_modal_view.png>)
+*   **Modular Architecture:** Built using ES6 Modules for clean separation of concerns and maintainability.
+*   **Dynamic Data Fetching:** Integrates with a REST API to fetch live podcast data asynchronously.
+*   **Intelligent Filtering:** Filter shows by genre or search by title with real-time UI updates.
+*   **Advanced Sorting:** Organize podcasts by title (A-Z/Z-A) or by update date (Newest/Oldest).
+*   **Modern UI/UX:** Features skeleton loaders for improved perceived performance and staggered CSS animations for smooth transitions.
+*   **Responsive Design:** Fully optimized for mobile, tablet, and desktop viewports.
+*   **Accessibility (a11y):** Built with semantic HTML5 elements and ARIA roles for screen-reader compatibility.
 
 ---
 
-## Deliverables
+## 🛠️ Tech Stack
 
-- A fully functional, responsive podcast preview web application.
-- Clean, well-commented source code (HTML, CSS, JS).
+*   **Frontend:** Vanilla JavaScript (ES6+)
+*   **Styling:** Modern CSS3 utilizing CSS Variables for consistent theming.
+*   **Data Source:** Public Podcast REST API.
+*   **Icons:** SVG-based icons for high-resolution clarity.
+
+---
+
+## 📂 Project Structure
+
+The codebase is organized into specialized modules to ensure a scalable architecture:
+
+| File | Responsibility |
+| :--- | :--- |
+| `index.html` | Semantic structure and entry point for the application. |
+| `style.css` | Global styling, layout, and animation definitions. |
+| `app.js` | **Controller:** Manages global state and orchestrates interactions. |
+| `services.js` | **Business Logic:** API communication, date formatting, and data mapping. |
+| `ui.js` | **View Logic:** Pure functions responsible for generating DOM elements. |
+
+---
+
+## ⚙️ Installation & Setup
+
+Because this project utilizes **ES Modules**, it must be served via a local web server to comply with browser security policies (CORS).
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/Phuthuma-tech/PHUMAV25567_pto2508_Group-B_Phuthuma-Mavuso_DJS01.git](https://github.com/Phuthuma-tech/PHUMAV25567_pto2508_Group-B_Phuthuma-Mavuso_DJS01.git)
+    ```
+2.  **Navigate to the Directory:**
+    ```bash
+    cd podcast-app
